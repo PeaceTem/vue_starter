@@ -5,9 +5,13 @@
   import Compute from './components/Compute.vue';
   import TemplateIf from './components/TemplateIf.vue';
   import ListRendering from './components/ListRendering.vue';
+  import Product from './components/Product.vue';
 </script>
 
 <template>
+  <div>
+      <Product />
+  </div>
   <div>
     <ListRendering />
   </div>
