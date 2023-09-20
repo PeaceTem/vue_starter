@@ -14,9 +14,15 @@ const author = reactive({
 const publishedBooksMessage = computed(() => {
   return author.books.length > 0 ? 'Yes' : 'No'
 })
+
+const styleObject = reactive({
+  color: 'red',
+  fontSize: '13px'
+})
 </script>
 
 <template>
   <p>Has published books:</p>
   <span>{{ publishedBooksMessage }}</span>
+  <div :class="$attrs.class" :style="styleObject"></div>
 </template>

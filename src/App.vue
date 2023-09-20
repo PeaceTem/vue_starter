@@ -11,7 +11,7 @@
   </div>
 
   <div>
-    <Compute />
+    <Compute class="foo bar" />
   </div>
 
 
