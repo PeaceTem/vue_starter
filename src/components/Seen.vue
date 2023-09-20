@@ -4,6 +4,7 @@
     const awesome = ref(false);
 
     const type = 'B';
+
 </script>
 
 <template>
@@ -25,3 +26,4 @@
         Not A/B/C
     </div>
 </template>
+

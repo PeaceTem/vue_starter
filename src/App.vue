@@ -1,11 +1,14 @@
 <script setup>
-  import HelloWorld from './components/HelloWorld.vue'
-  import TheWelcome from './components/TheWelcome.vue'
-  import Seen from './components/Seen.vue'
+  import HelloWorld from './components/HelloWorld.vue';
+  import TheWelcome from './components/TheWelcome.vue';
+  import Seen from './components/Seen.vue';
   import Compute from './components/Compute.vue';
+  import TemplateIf from './components/TemplateIf.vue';
 </script>
 
 <template>
+  <TemplateIf />
+  
   <div>
     <Seen />
   </div>
