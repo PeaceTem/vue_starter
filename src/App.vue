@@ -4,11 +4,17 @@
   import Seen from './components/Seen.vue';
   import Compute from './components/Compute.vue';
   import TemplateIf from './components/TemplateIf.vue';
+  import ListRendering from './components/ListRendering.vue';
 </script>
 
 <template>
-  <TemplateIf />
-  
+  <div>
+    <ListRendering />
+  </div>
+  <div>
+    <TemplateIf />
+  </div>
+
   <div>
     <Seen />
   </div>
