@@ -70,20 +70,33 @@
 
  getData()
 </script>
-<!-- {{product.id}}, {{ product.title }}, {{ product.description }}, {{ product.price }},
+<!-- {{product.id}}, {{ product.title }}, {{ product.description }},
+     {{ product.price }},
 {{ product.discountPercentage }}, {{ product.rating }}, {{ product.stock }},
-{{ product.brand }}, {{ product.category }}, {{ product.thumbnail }}, {{ product.images }}
+{{ product.brand }}, {{ product.category }}, {{ product.thumbnail }}, 
+{{ product.images }}
  -->
 
 <template>
     <div>
         <!-- The Products: {{ products }} -->
     </div>
-    <div v-for="product in products.products" class="bg-white">
+    <div v-for="product in products.products" class="bg-gray-900 p-4">
+        <div class="container bg-white rounded-lg p-2 mx-auto">
+            <div class="rounded-sm">
+                <img :src="product.thumbnail">
+            </div>
+            <div class="container rounded-md bg-white mx-auto mt-2">
+                <span class="text-md p-2 rounded-md font-mono text-black">{{ product.title }}</span>
+                <span class="bg-gray-900 text-white text-sm rounded-lg px-2 py-1 inline">{{ product.category }}</span>
+            </div>
 
-        <div class="container">
-            <div class="font-bold text-2xl text-black">{{ product.title }}</div>
+            <div class="container text-gray-700">
+                <span class="mx-2">${{ product.price }}</span>
+                <span class="mx-2">★{{ product.rating }}</span>
+            </div>
         </div>
+
   </div>
 </template>
 
